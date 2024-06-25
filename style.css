@@ -1188,3 +1188,7 @@
     .cursor-pointer {
       cursor: pointer
     }
+
+    #testimonials {
+      display: none;
+    }
