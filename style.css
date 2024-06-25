@@ -1185,3 +1185,6 @@
       }
     }
   
+    .cursor-pointer {
+      cursor: pointer
+    }

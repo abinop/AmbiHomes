@@ -1,14 +1,6 @@
 <html lang="en">
 
 <head>
-  <script async="" src="https://www.googletagmanager.com/gtag/js?id="></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', '');
-  </script>
   <meta charset="utf-8">
   <title>Ambi Homes | Your Serene Getaway in Chios</title>
   <meta name="description"
@@ -28,54 +20,58 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
   <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;family=IBM+Plex+Sans:wght@300;400;500;600;700&amp;family=Heebo:wght@300;400;500;600;700&amp;family=Arimo:wght@300;400;500;600;700&amp;display=swap"
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&amp;family=IBM+Plex+Sans:wght@300;400;500;600;700&amp;family=Heebo:wght@300;400;500;600;700&amp;family=Arimo:wght@300;400;500;600;700&amp;display=swap"
     as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript>
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Heebo:wght@300;400;500;600;700&family=Arimo:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Heebo:wght@300;400;500;600;700&family=Arimo:wght@300;400;500;600;700&display=swap"
       rel="stylesheet" />
   </noscript>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   
 
 </head>
 
 <body>
 
-  <header id="top" class="code-section font-['Poppins']">
+  <header id="top" class="code-section font-['Roboto']">
     <nav class="container mx-auto p-6">
       <div class="flex items-center justify-between">
         <div class="text-xl font-bold"><a id="nav-name-text" href="#"
-            class="primary-color-text text-xl text-green-600">Ambi Homes in Karfas Chios</a></div>
-        <div id="nav-links" class="hidden items-center space-x-6 md:flex"><a href="#gallery"
-            class="gallery-link text-gray-800">Gallery</a><a href="#testimonials"
-            class="testimonials-link text-gray-800">Testimonials</a><a href="#contact-us" class="text-gray-800">Contact
-            Us</a></div>
+            class="primary-color-text text-xl text-green-600">Magical Hillside Cottages&nbsp;in Aghia Fotia</a></div>
+        <div id="nav-links" class="hidden items-center space-x-6 md:flex">
+          <a href="#gallery" class="gallery-link text-gray-800">Gallery</a>
+          <a href="#testimonials" class="testimonials-link text-gray-800">Testimonials</a>
+          <a href="#contact-us" class="text-gray-800">Contact Us</a>
+          <span id="language-toggle" class="text-2xl cursor-pointer">🇺🇸</span>
+        </div>
 
-        <div id="mobile-menu-icon" class="flex items-center md:hidden"><button class="text-gray-800"
-            aria-label="Navigation Dropdown Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round" class="feather feather-menu">
+        <div id="mobile-menu-icon" class="flex items-center md:hidden">
+          <button class="text-gray-800" aria-label="Navigation Dropdown Menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-menu">
               <line x1="3" y1="12" x2="21" y2="12"></line>
               <line x1="3" y1="6" x2="21" y2="6"></line>
               <line x1="3" y1="18" x2="21" y2="18"></line>
-            </svg></button></div>
+            </svg>
+          </button>
+        </div>
       </div>
       <div id="nav-links-mobile" class="mt-4 hidden md:hidden">
-        <div class="relative z-10 flex flex-col space-y-2 bg-white pb-4 text-center text-lg"><a href="/#gallery"
-            class="gallery-link text-gray-800">Gallery</a><a href="/#testimonials"
-            class="testimonials-link text-gray-800">Testimonials</a><a href="/#contact-us" class="text-gray-800">Contact
-            Us</a>
-          <div id="nav-mobile-cta-login-buttons" class="hidden flex-col space-y-2"><a href="/login"
-              class="px-4 py-2 pt-4 text-gray-800">Log In</a><a href="/signup"
-              class="primary-color-bg rounded px-4 py-2 text-white bg-green-600">Sign Up</a></div>
+        <div class="relative z-10 flex flex-col space-y-2 bg-white pb-4 text-center text-lg">
+          <a href="/#gallery" class="gallery-link text-gray-800">Gallery</a>
+          <a href="/#testimonials" class="testimonials-link text-gray-800">Testimonials</a>
+          <a href="/#contact-us" class="text-gray-800">Contact Us</a>
+          <span id="language-toggle-mobile" class="text-2xl cursor-pointer mx-auto">🇺🇸</span>
         </div>
       </div>
     </nav>
   </header>
+
   <section
-    class="code-section relative flex h-[700px] w-full px-6 pt-48 text-center font-['Poppins'] md:px-12 lg:px-24 xl:px-52"
+    class="code-section relative flex h-[700px] w-full px-6 pt-48 text-center font-['Roboto'] md:px-12 lg:px-24 xl:px-52"
     id="sl9n7mv">
     <div
       class="seo-image high-res-image absolute inset-0 h-full w-full bg-cover bg-center object-cover brightness-75 dont-replace"
@@ -94,7 +90,7 @@
       </div>
     </div>
   </section>
-  <section class="code-section font-['Poppins']" id="sxv49s">
+  <section class="code-section font-['Roboto']" id="sxv49s">
     <div class="container mx-auto px-6 pt-12 md:mt-2 md:pt-12">
       <div id="hero-rtl" class="flex flex-col items-stretch lg:flex-row">
         <div class="relative lg:w-1/2 xl:w-1/3">
@@ -132,7 +128,7 @@
       </div>
     </div>
   </section>
-  <section id="gallery" class="code-section full-gallery-section font-['Poppins']">
+  <section id="gallery" class="code-section full-gallery-section font-['Roboto']">
     <div class="container mx-auto px-6 md:pt-24">
       <div id="gallery-header" class="mb-12 text-3xl font-semibold md:text-5xl">Explore Our Cottages</div>
       <div class="grid grid-cols-1 gap-x-6 gap-y-12 md:grid-cols-2 lg:grid-cols-3 lg:gap-y-24 xl:grid-cols-4">
@@ -316,7 +312,7 @@
       </div>
     </div>
   </section>
-  <section id="contact-us" class="code-section font-['Poppins']">
+  <section id="contact-us" class="code-section font-['Roboto']">
     <div class="mx-auto px-4 py-20 lg:container sm:px-12 xl:px-32">
       <div class="relative z-10 rounded-3xl bg-white p-6 shadow-[0_0_25px_rgba(0,0,0,0.1)]">
         <div class="flex flex-col lg:flex-row lg:space-x-8">
@@ -392,7 +388,7 @@
       </div>
     </div>
   </section>
-  <footer class="primary-color-bg primary-color-[100] code-section mt-8 font-['Poppins'] bg-green-100" id="s3pd2dg">
+  <footer class="primary-color-bg primary-color-[100] code-section mt-8 font-['Roboto'] bg-green-100" id="s3pd2dg">
     <div id="footer" class="container mx-auto px-4 text-center">
       <div class="flex items-center justify-center pt-12 text-left text-xl font-bold md:justify-start lg:pt-20"><a
           id="footer-brand-name" href="/" class="text-xl">Ambi Homes</a></div>
@@ -430,7 +426,54 @@
   <script>function setupFormSubmission(e) { document.getElementById(e).addEventListener("submit", function (e) { e.preventDefault(); for (var t, n, o = e.target.elements, i = {}, r = 0; r < o.length; r++)"submit" === o[r].type ? t = o[r] : i[o[r].name] = o[r].value; t ? (n = t.innerText, i.analyticsId = window.LANDING_SITE_ID, t.innerText = "Sending...", fetch(window.LANDING_SITE_CONTACT_US_URL, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(i) }).then(function (e) { if (console.log(e), e.ok) { t.innerText = "Done!"; for (var n = 0; n < o.length; n++)"submit" !== o[n].type && (o[n].value = "") } else t.innerText = "Error. Please try again." }).catch(e => { console.error("Error:", e) }).finally(function () { setTimeout(function () { t.innerText = n }, 4e3) })) : console.error("No submit button found.") }) } document.getElementById("mobile-menu-icon").addEventListener("click", function () { document.getElementById("nav-links-mobile").classList.toggle("hidden") }), setupFormSubmission("contact-us-form");</script>
   <script defer="" src="https://kit.fontawesome.com/8e98006f77.js" crossorigin="anonymous"></script>
   <style media="all" id="fa-kit-upload"></style>
-  
+
+  <script>
+
+    const englishContent = {
+      heroHeaderText: "Escape to Tranquility",
+      heroSubtext: "Experience a magical retreat with stunning sea views and unparalleled comfort.",
+      heroRTLHeader: "Discover Your Perfect Getaway",
+      heroRTLSubtext: "Nestled on a magical hillside, just above the stunning beaches of Aghia Fotia and Karfas, Magical Hillside Cottages offers a serene and unforgettable vacation experience. Our three modern cottages are meticulously designed for your utmost comfort and convenience, providing an idyllic escape from the everyday hustle and bustle.",
+      heroRTLSubtext2: "Each cottage boasts unobstructed views of the shimmering sea and the opposite Anatolian coast. Located merely 6 kilometers from Chora, the town of Chios, our cottages grant you easy access to both the vibrant local culture and the serene beaches. Karfas, the oldest holiday settlement in Chios, entices with its extensive sandy beach, warm shallow waters ideal for children, and outstanding restaurants with a rich history."
+    };
+
+    const greekContent = {
+      heroHeaderText: "Αποδράστε στην Ηρεμία",
+      heroSubtext: "Ζήστε μια μαγευτική απόδραση με εκπληκτική θέα στη θάλασσα και απαράμιλλη άνεση.",
+      heroRTLHeader: "Ανακαλύψτε το Τέλειο Καταφύγιο σας",
+      heroRTLSubtext: "Χτισμένα σε μια μαγευτική πλαγιά, ακριβώς πάνω από τις εντυπωσιακές παραλίες του Αμπί και του Καρφά, τα Μαγικά Σπιτάκια στην Πλαγιά προσφέρουν μια γαλήνια και αξέχαστη εμπειρία διακοπών. Τα τρία μοντέρνα σπιτάκια μας είναι σχεδιασμένα με προσοχή στην παραμικρή λεπτομέρεια για την απόλυτη άνεση και ευκολία σας, προσφέροντας ένα ειδυλλιακό καταφύγιο από την καθημερινή φασαρία.",
+      heroRTLSubtext2: "Κάθε σπιτάκι διαθέτει ανεμπόδιστη θέα στη λαμπερή θάλασσα και τις απέναντι Μικρασιατικές ακτές. Σε απόσταση μόλις 6 χιλιομέτρων από τη Χώρα, την πόλη της Χίου, τα σπιτάκια μας σας προσφέρουν εύκολη πρόσβαση τόσο στη ζωντανή τοπική κουλτούρα όσο και στις γαλήνιες παραλίες. Ο Καρφάς, ο παλαιότερος παραθεριστικός οικισμός της Χίου, σας προσκαλεί με την εκτεταμένη αμμώδη παραλία του, τα ζεστά ρηχά νερά που είναι ιδανικά για παιδιά, και τα εξαιρετικά εστιατόρια με πλούσια ιστορία."
+    };
+
+    function updateLanguage(language) {
+      $("#hero-header-text").text(language.heroHeaderText);
+      $("#hero-subtext").text(language.heroSubtext);
+      $("#hero-rtl-header").text(language.heroRTLHeader);
+      $("#hero-rtl-subtext").text(language.heroRTLSubtext);
+      $("#hero-rtl-subtext2").text(language.heroRTLSubtext2);
+    }
+
+    function toggleLanguage() {
+      const $languageToggle = $("#language-toggle");
+      const $languageToggleMobile = $("#language-toggle-mobile");
+
+      if ($("html").attr("lang") === "en") {
+        $("html").attr("lang", "el");
+        updateLanguage(greekContent);
+        $languageToggle.text("🇬🇷");
+        $languageToggleMobile.text("🇬🇷");
+      } else {
+        $("html").attr("lang", "en");
+        updateLanguage(englishContent);
+        $languageToggle.text("🇺🇸");
+        $languageToggleMobile.text("🇺🇸");
+      }
+    }
+
+    $("#language-toggle").on("click", toggleLanguage);
+    $("#language-toggle-mobile").on("click", toggleLanguage);
+  </script>
+
 </body>
 
 </html>
