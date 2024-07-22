@@ -102,7 +102,7 @@
             class="primary-color-bg primary-color-[50] absolute -left-24 -top-12 h-full w-full rounded-bl-[115px] rounded-br-[0px] rounded-tl-[0px] rounded-tr-[47px] bg-green-50">
           </div><img
             class="bl-3xl relative z-10 mx-auto h-full rounded-bl-[40px] rounded-br-[76px] rounded-tl-[104px] rounded-tr-[45px] object-cover lg:h-1/2 xl:h-full dont-replace"
-            src="https://i.imgur.com/7DuKUu0.jpeg" alt="Discover Your Perfect Getaway"
+            src="https://i.imgur.com/m7BUWO1.jpg" alt="Discover Your Perfect Getaway"
             data-media="{&quot;src&quot;:&quot;upload&quot;,&quot;type&quot;:&quot;image&quot;}"
             oncontextmenu="return false;">
         </div>
@@ -159,7 +159,7 @@
           </div>
         </div>
         <div class="flex flex-col"><img class="flex-grow rounded-lg object-cover dont-replace"
-            src="https://i.imgur.com/KiXKhCe.jpeg" alt="Gallery"
+            src="https://i.imgur.com/I8ofepg.jpeg" alt="Gallery"
             data-media="{&quot;src&quot;:&quot;upload&quot;,&quot;type&quot;:&quot;image&quot;}"
             oncontextmenu="return false;">
           <div class="text-under-the-images">
@@ -170,7 +170,7 @@
           </div>
         </div>
         <div class="flex flex-col"><img class="flex-grow rounded-lg object-cover dont-replace"
-            src="https://i.imgur.com/7j8yHKY.jpeg" alt="Gallery"
+            src="https://i.imgur.com/oiTHakK.jpeg" alt="Gallery"
             data-media="{&quot;src&quot;:&quot;upload&quot;,&quot;type&quot;:&quot;image&quot;}"
             oncontextmenu="return false;">
           <div class="text-under-the-images">
@@ -308,18 +308,17 @@
   </section>
   <footer class="primary-color-bg primary-color-[100] code-section mt-8 font-['Roboto'] bg-green-100" id="s3pd2dg">
     <div id="footer" class="container mx-auto px-4 text-center">
-      <div class="flex items-center justify-center pt-12 text-left text-xl font-bold md:justify-start lg:pt-20"><a
-          id="footer-brand-name" href="/" class="text-xl">Ambi Homes</a></div>
-      <div class="grid grid-cols-1 pt-4 md:grid-cols-3 lg:grid-cols-4 lg:space-x-24">
+      <div class="flex items-center justify-center pt-12 text-left text-xl font-bold md:justify-start lg:pt-20">
+        <a id="footer-brand-name" href="/" class="text-xl">Ambi Homes</a>
+      </div>
+      <div class="grid grid-cols-1 pt-4 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <div class="mb-8">
-          <p id="footer-brand-subtext" class="text-center text-xs md:text-left">Experience a slice of paradise with our
-            beautifully designed hillside cottages.</p>
-          <div id="footer-social-links" class="my-8 flex flex-row justify-center md:justify-start"><a
-              id="footer-facebook-link" href="/" class="mx-2" aria-label="Visit our Facebook"><em
-                class="fa-brands fa-facebook-f" aria-hidden="true"></em></a><a id="footer-twitter-link" href="/"
-              class="mx-2" aria-label="Visit our Twitter"><em class="fa-brands fa-x-twitter"
-                aria-hidden="true"></em></a><a id="footer-linkedin-link" href="/" class="mx-2"
-              aria-label="Visit our LinkedIn"><em class="fa-brands fa-linkedin-in" aria-hidden="true"></em></a></div>
+          <p id="footer-brand-subtext" class="text-center text-xs md:text-left">Experience a slice of paradise with our beautifully designed hillside cottages.</p>
+          <div id="footer-social-links" class="my-8 flex flex-row justify-center md:justify-start">
+            <a id="footer-facebook-link" href="/" class="mx-2" aria-label="Visit our Facebook"><em class="fa-brands fa-facebook-f" aria-hidden="true"></em></a>
+            <a id="footer-twitter-link" href="/" class="mx-2" aria-label="Visit our Twitter"><em class="fa-brands fa-x-twitter" aria-hidden="true"></em></a>
+            <a id="footer-linkedin-link" href="/" class="mx-2" aria-label="Visit our LinkedIn"><em class="fa-brands fa-linkedin-in" aria-hidden="true"></em></a>
+          </div>
         </div>
         <div id="footer-nav-links" class="mb-8 space-y-3">
           <div class="flex items-center justify-center space-x-2 text-sm"><a href="/">Terms of Service</a></div>
@@ -336,10 +335,14 @@
             <p id="footer-email">info@AmbiHomes.com</p>
           </div>
         </div>
+        <div class="mb-8 flex flex-col items-center justify-center">
+          <a href="https://i.imgur.com/PtQW5su.jpg" target="_blank">
+            <img src="https://i.imgur.com/0br1Cuj.jpg" alt="Ενίσχυση της Ίδρυσης και Λειτουργίας Νέων Μικρομεσαίων Τουριστικών Επιχειρήσεων" class="max-w-full h-auto" style="max-height: 120px;">
+          </a>
+        </div>
       </div>
+      <p id="footer-copyright" class="py-8 text-center text-sm">© 2024 Ambi Homes. All rights reserved.</p>
     </div>
-    <p id="footer-copyright" class="py-12 text-center text-sm">© 2024 Ambi Homes. All rights reserved.
-    </p>
   </footer>
   <script>function setupFormSubmission(e) { document.getElementById(e).addEventListener("submit", function (e) { e.preventDefault(); for (var t, n, o = e.target.elements, i = {}, r = 0; r < o.length; r++)"submit" === o[r].type ? t = o[r] : i[o[r].name] = o[r].value; t ? (n = t.innerText, i.analyticsId = window.LANDING_SITE_ID, t.innerText = "Sending...", fetch(window.LANDING_SITE_CONTACT_US_URL, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(i) }).then(function (e) { if (console.log(e), e.ok) { t.innerText = "Done!"; for (var n = 0; n < o.length; n++)"submit" !== o[n].type && (o[n].value = "") } else t.innerText = "Error. Please try again." }).catch(e => { console.error("Error:", e) }).finally(function () { setTimeout(function () { t.innerText = n }, 4e3) })) : console.error("No submit button found.") }) } document.getElementById("mobile-menu-icon").addEventListener("click", function () { document.getElementById("nav-links-mobile").classList.toggle("hidden") }), setupFormSubmission("contact-us-form");</script>
   <script defer="" src="https://kit.fontawesome.com/8e98006f77.js" crossorigin="anonymous"></script>
