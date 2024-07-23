@@ -1196,3 +1196,9 @@
     #testimonials {
       display: none;
     }
+    
+    @media (min-width: 640px) {
+      .text-under-the-images {
+        min-height: 160px;
+      }
+    }
