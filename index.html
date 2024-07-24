@@ -282,47 +282,37 @@
                 </div>
               </div>
               <div class="w-full p-6">
-                <form id="contact-us-form">
-                  <div class="flex flex-col space-y-4 md:space-y-12">
-                    <div class="flex flex-col space-y-4 md:flex-row md:space-x-8 md:space-y-0">
+                <form id="contact-us-form" class="flex flex-col space-y-4 md:space-y-12">
+                  <div class="flex flex-col space-y-4 md:flex-row md:space-x-8 md:space-y-0">
                       <div class="w-full">
-                        <div><label for="first-name" class="font-medium text-gray-700" id="contact-first-name">First
-                            Name</label></div>
-                        <div><input id="first-name" name="first-name" type="text"
-                            class="w-full border border-white border-b-gray-300 p-2"></div>
+                          <label for="first-name" class="block text-sm font-medium text-gray-700">First Name</label>
+                          <input type="text" id="first-name" name="first-name" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500">
                       </div>
                       <div class="w-full">
-                        <div><label for="last-name" class="font-medium text-gray-700" id="contact-last-name">Last
-                            Name</label></div>
-                        <div><input id="last-name" name="last-name" type="text"
-                            class="w-full border border-white border-b-gray-300 p-2"></div>
+                          <label for="last-name" class="block text-sm font-medium text-gray-700">Last Name</label>
+                          <input type="text" id="last-name" name="last-name" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500">
                       </div>
-                    </div>
-                    <div class="flex flex-col space-y-4 md:flex-row md:space-x-8 md:space-y-0">
-                      <div class="w-full">
-                        <div><label for="email" class="font-medium text-gray-700" id="contact-email">Email</label></div>
-                        <div><input id="email" type="email" name="email"
-                            class="w-full border border-white border-b-gray-300 p-2"></div>
-                      </div>
-                      <div class="w-full">
-                        <div><label for="phone" class="font-medium text-gray-700" id="contact-phone">Phone
-                            Number</label>
-                        </div>
-                        <div><input id="phone" type="phone" name="phone"
-                            class="w-full border border-white border-b-gray-300 p-2"></div>
-                      </div>
-                    </div>
-                    <div class="w-full">
-                      <div><label for="message" class="font-medium text-gray-700" id="contact-message">Message</label>
-                      </div>
-                      <div><textarea id="message" name="message" rows="4"
-                          class="w-full border border-white border-b-gray-300 p-2"></textarea></div>
-                    </div>
-                    <div><button type="submit"
-                        class="primary-color-bg items-center rounded px-8 py-3 text-sm font-semibold uppercase text-white bg-green-600 hover:bg-green-500"
-                        id="contact-submit-button">Send Message</button></div>
                   </div>
-                </form>
+                  <div class="flex flex-col space-y-4 md:flex-row md:space-x-8 md:space-y-0">
+                      <div class="w-full">
+                          <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                          <input type="email" id="email" name="email" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500">
+                      </div>
+                      <div class="w-full">
+                          <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
+                          <input type="tel" id="phone" name="phone" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500">
+                      </div>
+                  </div>
+                  <div class="w-full">
+                      <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                      <textarea id="message" name="message" rows="4" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500"></textarea>
+                  </div>
+                  <div>
+                      <button  class="inline-flex justify-center rounded-md border border-transparent bg-green-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">
+                          Send Message
+                      </button>
+                  </div>
+              </form>
               </div>
             </div>
           </div>
@@ -528,7 +518,7 @@
         $languageToggleMobile.text("🇬🇷");
         $("#espa_link").attr("href", "https://i.imgur.com/PtQW5su.jpg");
         $("#espa_image").attr("src", "https://i.imgur.com/0br1Cuj.jpg");
-      }else{
+      } else {
         $("html").attr("lang", "en");
         updateLanguage(englishContent);
         $languageToggle.text("🇺🇸");
@@ -542,6 +532,31 @@
     $("#language-toggle-mobile").on("click", toggleLanguage);
   </script>
   <script src="https://website-widgets.pages.dev/dist/sienna.min.js" defer></script>
+
+  <script>
+    document.getElementById('contact-us-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const formData = new FormData(this);
+
+      fetch('https://formsubmit.co/abinop@gmail.com', {
+        method: 'POST',
+        body: formData
+      })
+        .then(response => {
+          if (response.ok) {
+            alert('Message sent successfully!');
+            this.reset();
+          } else {
+            alert('There was an error sending your message. Please try again.');
+          }
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          alert('There was an error sending your message. Please try again.');
+        });
+    });
+  </script>
 </body>
 
 </html>
